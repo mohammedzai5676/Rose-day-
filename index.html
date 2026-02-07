@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To My Verushka, From Naveed 🩷</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #ffd1dc 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            overflow: hidden;
+            position: relative;
+        }
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="%23ff69b4" opacity="0.4"/><circle cx="80" cy="30" r="1.5" fill="%23ff1493" opacity="0.3"/><circle cx="50" cy="80" r="2" fill="%23ffb6c1" opacity="0.5"/></svg>') repeat;
+            animation: sparkle 25s linear infinite;
+        }
+        @keyframes sparkle {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            100% { transform: translate(100px, 100px) rotate(360deg); }
+        }
+        #intro {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #8b0000, #ff1493, #c71585);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            animation: unfold 3s ease-out forwards;
+        }
+        @keyframes unfold {
+            0% {
+                clip-path: polygon(50% 50%, 50% 50%, 50% 50%);
+                transform: scale(0.1);
+            }
+            50% {
+                clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+            }
+            100% {
+                clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+                transform: scale(1);
+                opacity: 0;
+            }
+        }
+        .envelope {
+            font-size: 6rem;
+            color: white;
+            animation: pulse 2s infinite;
+            margin-bottom: 20px;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .intro-text {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5rem;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .container {
+            max-width: 900px;
+            padding: 50px 30px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 25px;
+            box-shadow: 0 30px 60px rgba(255, 105, 180, 0.4);
+            backdrop-filter: blur(15px);
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 3.5s forwards;
+            position: relative;
+            z-index: 1;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(100px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4.5rem;
+            background: linear-gradient(45deg, #ff1493, #ff69b4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 30px;
+            text-shadow: none;
+        }
+        .rose-row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 30px 0;
+            font-size: 4rem;
+        }
+        .letter-box {
+            background: linear-gradient(135deg, #8b1538, #c71585, #db7093); /* Dark pink box 🩷 */
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 30px 0;
+            box-shadow: 0 15px 40px rgba(139, 21, 56, 0.5);
+            font-size: 1.3rem;
+            line-height: 1.8;
+            font-family: 'Great Vibes', cursive;
+            position: relative;
+        }
+        .letter-box::before {
+            content: '💌';
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            background: #ff1493;
+            border-radius: 50%;
+            padding: 10px;
+            box-shadow: 0 5px 15px rgba(255,20,147,0.6);
+        }
+        .letter-box p {
+            margin: 15px 0;
+        }
+        .song-box {
+            background: linear-gradient(135deg, #ff69b4, #ffb6c1);
+            color: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 15px 40px rgba(255,105,180,0.4);
+            font-style: italic;
+        }
+        .song-box h3 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .heart-big {
+            font-size: 5rem;
+            color: #ff1493;
+            animation: heartbeat 1.5s infinite;
+            display: block;
+            margin: 40px 0;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            14% { transform: scale(1.3); }
+            28% { transform: scale(1); }
+            42% { transform: scale(1.3); }
+            70% { transform: scale(1); }
+        }
+        audio {
+            margin: 20px 0;
+            width: 300px;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 3.5rem; }
+            .rose-row { font-size: 3rem; }
+            .letter-box, .song-box { padding: 30px 20px; font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Intro Envelope Animation -->
+    <div id="intro">
+        <div class="envelope">💌</div>
+        <div class="intro-text">Opening your love letter from Naveed...</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Happy Rose Day, Verushka! 🩷</h1>
+        <div class="rose-row">
+            🌹🌹🌹🌹🌹
+        </div>
+
+        <!-- Long Love Letter in Dark Pink Box -->
+        <div class="letter-box">
+            <p>Dearest Verushka,</p>
+            <p>On this beautiful Rose Day, my heart overflows with love for you. From the moment I met you, you've been the pink rose that brightens my every day. Your smile lights up my world, your laugh is my favorite melody, and your touch sets my soul on fire.</p>
+            <p>Verushka, you are my everything – my partner in adventure, my confidante in quiet moments, and the beat to my heart. Every petal of a rose reminds me of the layers of your beauty: soft yet strong, vibrant yet tender. I promise to cherish you, protect you, and love you endlessly.</p>
+            <p>Thank you for being you, for loving me back, and for making life a romantic dream. Here's to many more Rose Days together, hand in hand, heart to heart.</p>
+            <p>Forever yours,<br><strong>Naveed 💖</strong></p>
+        </div>
+
+        <div class="heart-big">💖</div>
+
+        <!-- Romantic Song -->
+        <div class="song-box">
+            <h3>Our Short Romantic Song: "Roses for Verushka" 🩷</h3>
+            <p>Roses are red, violets are blue,</p>
+            <p>Verushka my love, I'm so lucky it's you.</p>
+            <p>With Naveed by your side, through nights and through days,</p>
+            <p>Our love blooms eternal, in pink rose bouquets. 🌹</p>
+        </div>
+
+        <!-- Background Music (Public domain romantic tune - replace src with a free .mp3 link if needed) -->
+        <audio autoplay loop style="margin-top: 20px;">
+            <source src="https://www.soundjay.com/misc/sounds/romantic-piano-1.mp3" type="audio/mpeg"> <!-- Example free/public domain link; replace with actual free romantic music URL -->
+            Your browser doesn't support audio. Music adds magic! 🎵
+        </audio>
+        <p style="font-size: 1rem; color: #666; margin-top: 10px;">(Soft romantic piano playing in the background 🩷)</p>
+    </div>
+
+    <script>
+        // Hide intro after animation
+        setTimeout(() => {
+            document.getElementById('intro').style.display = 'none';
+        }, 3500);
+    </script>
+</body>
+</html>
