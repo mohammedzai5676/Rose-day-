@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Rose Day, My Love 🩷</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%); /* Pink gradient theme 🩷 */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            overflow-x: hidden;
+            position: relative;
+        }
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><filter id="rose"><feTurbulence baseFrequency="0.5" numOctaves="3" /><feDisplacementMap in="SourceGraphic" scale="5"/></filter></defs><circle cx="50" cy="50" r="2" fill="%23ff69b4" filter="url(%23rose)" opacity="0.3"/></svg>') repeat;
+            animation: float 20s ease-in-out infinite;
+            z-index: -1;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .container {
+            max-width: 800px;
+            padding: 40px 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 30px;
+            box-shadow: 0 20px 40px rgba(255, 105, 180, 0.3);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 2s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4rem;
+            color: #ff1493; /* Hot pink 🩷 */
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .rose-emoji {
+            font-size: 5rem;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .note {
+            font-size: 1.4rem;
+            line-height: 1.6;
+            margin: 30px 0;
+            color: #555;
+        }
+        .song {
+            background: linear-gradient(45deg, #ffb6c1, #ff69b4);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 30px 0;
+            color: white;
+            font-style: italic;
+            box-shadow: 0 10px 30px rgba(255, 20, 147, 0.4);
+        }
+        .song h3 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: white;
+        }
+        .heart {
+            font-size: 3rem;
+            color: #ff1493;
+            animation: heartbeat 1.5s infinite;
+            display: block;
+            margin: 20px 0;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            14% { transform: scale(1.3); }
+            28% { transform: scale(1); }
+            42% { transform: scale(1.3); }
+            70% { transform: scale(1); }
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 3rem; }
+            .rose-emoji { font-size: 4rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Rose Day! 🩷</h1>
+        <div class="rose-emoji">🌹</div>
+        
+        <p class="note">
+            My dearest love, on this special Rose Day, every petal reminds me of your beauty and the way you make my heart bloom. You are the pink rose in my garden of life – delicate, vibrant, and irreplaceable. I love you more than words can say. 🩷
+        </p>
+        
+        <span class="heart">💖</span>
+        
+        <div class="song">
+            <h3>A Short Romantic Song: "Roses Red" [web:1][web:12]</h3>
+            <p>Roses are red, violets are blue,</p>
+            <p>Sugar is sweet, and so are you.</p>
+            <p>Under the moon’s glow, our love shines true,</p>
+            <p>Forever my rose, my heart beats for you. 🌹</p>
+        </div>
+        
+        <p class="note" style="font-size: 1.2rem; font-weight: 600;">
+            Here's your personal Rose Day website, bro! Save this as an .html file and open in any browser – it's responsive and magical. If you want animations, music, or tweaks, just ask! 🤌🏻🩷 [web:11]
+        </p>
+    </div>
+</body>
+</html>
